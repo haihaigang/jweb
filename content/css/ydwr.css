@@ -1,0 +1,49 @@
+/*reset common start*/
+.section .page-vertical{
+	padding-top:30px;
+}
+.header-right .znsj-header{
+    display:block;
+}
+.scroll-img {
+    width: 570px;
+    height: 385px;
+    border: none;
+}
+.scroll-img .items img {
+    width: 570px;
+    height: 385px;
+}
+/*reset common end*/
+/************************/
+
+.in-top{
+	background:url(../images/znsj/top.png) no-repeat;height:393px;width: 1045px;background-size: 100%;margin-bottom:17px;
+}
+.content{
+	background:#fff;padding-bottom: 0px;
+}
+.navigater,.app .navigater{
+	height:60px;line-height:60px;font-size:17px;color:#5c5c5c;padding-left:40px;
+}
+.in-content{
+	margin:0 20px;background:url(../images/znsj/center_1.png) no-repeat;height:145px;max-width: 1005px;background-size: 100%;
+}
+.app{
+	background:#fff;padding-bottom: 26px;
+}
+.app .in-content{
+	background:url(../images/znsj/center_2.png) no-repeat;height:146px;width: 1005px;background-size: 100%;
+}
+.middle-content{
+	padding:0px auto;background:#fff;margin-top:10px;
+}
+.middle-content .one{
+	background:url(../images/znsj/center_3.png) no-repeat;height:262px;width: 1045px;background-size: 100%;
+}
+.middle-content .two{
+	background:url(../images/znsj/text.png) no-repeat;height:306px;width: 1045px;background-size: 100%;
+}
+.middle-content .three{
+	background:url(../images/znsj/page.png) no-repeat;height:828px;width: 1045px;background-size: 100%;
+}

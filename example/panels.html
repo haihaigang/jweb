@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ABC</title>
+    <link rel="stylesheet" href="../content/css/common.css" />
+    <style type="text/css">
+    .demo {
+    	margin-top: 30px;
+    }
+    .panel0 {
+        display: none;
+        position: fixed;
+        z-index: 99;
+        top: 50%;
+        left: 50%;
+        width: 485px;
+        min-height: 300px;
+        _height: 300px;
+        margin-left: -243px;
+        margin-top: -150px;
+        background: #fff;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    }
+    .panel0 .panel-title {
+        padding: 14px 0;
+        border-bottom: 1px solid #cfcfcf;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .panel0 .panel-content {
+        padding: 14px 21px;
+    }
+    .panel0 .panel-footer {
+        height: 30px;
+    }
+    .panel0 .panel-close {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        display: block;
+        width: 35px;
+        height: 35px;
+        background: url(../content/images/icons/icon-close.png) no-repeat center center;
+    }
+    .panel0 .options {
+        padding-top: 14px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .panel0 .options .btn {
+        width: 90px;
+        box-sizing: content-box;
+    }
+    .panel0 .options .btn-submit {
+        margin-right: 14px;
+    }
+    .panel0 .form .tip {
+        display: inline-block;
+        margin-left: 65px;
+    }
+    .panel0 .form .form-item .txt{
+        width: 260px;
+    }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="page-vertical">
+        <a class="icon-logo" href="../"></a>
+    </div>
+</div><!--//header-->
+<div class="section">
+	<div class="page-vertical demo">
+		<a class="overlay" href="#mybag">打开看看</a>
+	</div>
+</div>
+<div class="panel0" id="mybag">
+	<div class="panel-title">创建子账号</div>
+	<div class="panel-content">
+		<form class="form" action="#" method="post" id="myform">
+			<div class="form-item">
+				<div class="form-label">子账号名：</div>
+				<div class="form-value"><input type="text" name="username" maxlength="50" class="txt"></div>
+			</div>
+			<div class="form-tips error"></div>
+			<div class="form-item">
+				<div class="form-label">密码：</div>
+				<div class="form-value"><input type="password" name="password" maxlength="12" class="txt"></div>
+			</div>
+			<div class="form-tips error"></div>
+			<div class="form-item">
+				<div class="form-label">电话：</div>
+				<div class="form-value"><input type="text" name="telephone" maxlength="50" class="txt"></div>
+			</div>
+			<div class="form-tips error"></div>
+			<div class="form-item">
+				<div class="form-label">账号类型：</div>
+				<div class="form-value">
+					<select name="dtype" class="txt">
+						<option value="">请选择..</option>
+						<option value="1">管理账号</option>
+						<option value="2">收银账号</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-tips error"></div>
+			<div class="form-item">
+				<div class="form-label">是否启用：</div>
+				<div class="form-value form-radio-group">
+					<label><input type="radio" value="1" name="default" checked="">是</label>
+					<label><input type="radio" value="0" name="default">否</label>
+				</div>
+			</div>
+			<div class="form-tips"></div>
+			<div class="options">
+				<button class="btn btn-submit">确定</button> 
+				<a class="btn btn-cancel" href="#">取消</a>
+			</div>
+		</form>
+	</div>
+	<a href="#" class="panel-close"></a>
+</div>
+<div id="panel-bg" style="display: none;"></div>
+
+<script src="../content/js/lib/jquery-1.8.1.min.js"></script>
+<script>
+	//遮罩层
+	var panelBg = $('#panel-bg');
+	$('.overlay').click(function(e) {
+	    e.preventDefault();
+
+	    panelBg.show();
+	    var target = $(this).attr('href');
+	    $(target).show().css({
+	        'margin-left': -$(target).width() / 2,
+	        'margin-top': -$(target).height() / 2
+	    });
+	});
+	$('.panel-close').click(function(e) {
+	    e.preventDefault();
+	    $(this).parent().hide();
+	    panelBg.hide();
+	});
+	$('.btn-cancel').click(function(e) {
+	    e.preventDefault();
+	    $(this).parents('.panel').hide();
+	    panelBg.hide();
+	});
+</script>
+</body>
+</style>

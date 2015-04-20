@@ -1,0 +1,156 @@
+﻿/*物融通*/
+
+body {
+    background-color: #14202b;
+    background-image: url(../images/wrt/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.wrt {
+    height: 727px;
+    background: url(../images/wrt/wrt.png) no-repeat center;
+    background-position: left center;
+}
+.wrt_bg{
+    float: right;
+	width: 374px;
+	height: 563px;
+    margin-top: 38px;
+	padding: 34px 13px;
+	background-image: url(../images/wrt/login-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.wrt_log {background:url(../images/wrt/wrt-bg.png) no-repeat;width:375px;height:563px;
+	position: relative;
+    width: 375px;
+    height: 563px;
+    background-color: #fff;
+}
+.wrt_log .t {
+    padding-left: 36px;line-height:51px;height:51px;font-size: 20px;color: #221d23;    
+}
+.wrt_log .method {
+    margin-left: 36px;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+.wrt_log .name{
+    margin-left: 36px;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+.wrt_log .pwd,.wrt_log .verify{
+    margin-left: 36px;
+    margin-top: 11px;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+.wrt_log .m_c {
+    margin-left: 36px;
+    margin-top: 5px;
+    background: url(../images/wrt/method.gif) no-repeat; width: 281px;height: 44px;   
+    line-height: 44px;
+    font-size: 13px;
+    color: #8d8d8e;
+    padding-left: 15px;
+    border: 0;
+    cursor: pointer;
+}
+.wrt_log .m_c_s {
+    background:#fff;
+    border: 1px solid #ccc;
+    width: 294px;
+    display: none;
+    position: absolute;
+    top: 139px;
+    left: 36px;
+}
+.m_c_s li {
+    font-size: 13px;
+    color: #8d8d8e;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+.m_c_s ul em{
+    margin-left:15px;
+}
+.wrt_log .name_c input {
+    margin-left: 36px;
+    margin-top: 6px;
+    width: 281px;padding-left:15px;
+    height: 44px;
+    background: url(../images/wrt/name-bg.png) no-repeat;
+    border: none;
+}
+.wrt_log .pwd_c input {
+    margin-left: 38px;
+    margin-top: 5px;  
+    background: url(../images/wrt/pwd-bg.png) no-repeat;width: 182px;height: 44px;padding-left:15px;
+    border: none;
+}
+.wrt_log .pwd_c span {
+    margin-left: 23px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+.wrt_log .verify_c input {
+    margin-left: 38px;
+    margin-top: 3px;
+    width: 127px;padding-left:15px;
+    height: 44px;
+    background: url(../images/wrt/verify-bg.png) no-repeat;
+    border: none;
+}
+.wrt_log .verify_c .verify_img {
+    height: 46px;
+    width: 95px;
+    float: right;
+    margin-top: 3px;
+    margin-right: 60px;
+}
+.wrt_log .verify span {
+    margin-left: 105px;
+    line-height: px;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+.wrt_log .log_btn {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.wrt_log .log_btn a {
+    position: absolute;
+    margin-left: 36px;
+    margin-top: 50px;
+    width: 300px;
+    height: 52px;
+    display: block;
+    text-indent: -999999em;
+    font-size: 0;
+    background-image: url(../images/wrt/btn-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.wrt_log .bott {
+    margin-left: 36px;
+    margin-top: 120px;
+}
+.wrt_log .bott a {
+    font-size: 14px;
+    color: #7f7f7f;
+}
+.wrt_log .bott .reg {
+    margin-left: 40px;
+}
+.wrt_log .bott .hp {
+    margin-left: 25px;
+    margin-right: 25px;
+}

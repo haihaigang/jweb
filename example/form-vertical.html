@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ABC</title>
+	<link rel="stylesheet" href="../content/css/common.css">
+	<style type="text/css">
+	.register {
+		width: 835px;
+		background-color: white;
+		height: 1096px;
+		margin: auto;
+	}
+	#register-form {
+		width: 622px;
+		margin: 0 auto;
+		padding-top: 33px; 
+		padding-bottom: 33px;
+	}
+	.form .form-value input {
+		width: 315px;
+	}
+	.form .form-options .btn{
+		width: 180px;
+	}
+	</style>
+</head>
+<body>
+	<div class="page-vertical">
+		<div class="register">
+			<form id="register-form" class="form form-vertical">
+				<div class="form-item">
+					<div class="form-label"><label><em>*</em>用户名：</label></div>
+					<div class="form-value">
+						<input class="form-text" type="text" name="account" id="username" placeholder="请输入用户名,不能少于3个字符" />
+					</div>
+				</div>
+				<div class="form-tips"></div>
+				<div class="form-item">
+					<div class="form-label"><label><em>*</em>密码：</label></div>
+					<div class="form-value">
+						<input class="form-text" type="password" name="pwd_one" placeholder="请输入密码，不能少于6个字符" />
+					</div>
+				</div>
+				<div class="tips"></div>
+				<div class="form-options">
+					<input type="submit" class="btn btn-primary" value="确定" />
+					<input type="button" class="btn btn-secondary" value="取消" />
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
