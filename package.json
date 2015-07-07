@@ -1,7 +1,7 @@
 {
   "name": "jWeb",
   "version": "0.1.0",
-  "description": "前端开始实例",
+  "description": "前端开发实例",
   "main": "index.js",
   "dependencies": {
     "grunt": "~0.4.4",
