@@ -7,12 +7,20 @@
     require('../base/common');
 
     //分页请求
-    config.paging = function(){
-	    Ajax.paging({
-	    	url: config.list,
-	    });
-    };
+    config.paging = function(opt) {
+        if (typeof opt != 'undefined')
+            config.page = opt;
 
+        Ajax.paging({
+            url: config.api_list,
+            data: {
+                belong_to: '103',
+                category: type,
+                page: config.page,
+                size: config.pageSize
+            }
+        });
+    };
     config.paging();
 
     $('.alert').click(function(e){

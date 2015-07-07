@@ -1,70 +1,69 @@
-/*
-reset,general,structure,components
-*/
-
-/*reset start*/
+/**
+ * 重置样式
+ */
 
 body, p, blockquote, figure, hr, h1, h2, h3, h4, h5, h6, ul, menu, dir, ol, dl, dd, fieldset, input[type=radio], input[type=checkbox], input[type=range], pre, xmp, plaintext, listing {
-    margin: 0;
-    white-space: inherit;
+	margin: 0;
+	white-space: inherit;
 }
 ul, menu, dir, ol, legend, fieldset, input, input[type=password], input[type=search], textarea, input[type=hidden], input[type=image], input[type=file], input[type=radio], input[type=checkbox], input[type=range], input[type=button], input[type=submit], input[type=reset], button {
-    padding: 0;
+	padding: 0;
 }
 input[type=search], input[type=button], input[type=submit], input[type=reset] {
-    -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-    font-weight: 400;
+	font-size: 100%;
+	font-weight: 400;
 }
 cite, var, address, em {
-    font-style: normal;
+	font-style: normal;
 }
 a:-webkit-any-link {
-    text-decoration: none;
+	text-decoration: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 fieldset, iframe {
-    border: 0;
+	border: 0;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 input, textarea, select, button {
-    font-family: inherit;
-    font-weight: inherit;
-    font-size: inherit;
-    margin: 0;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	margin: 0;
 }
 input, select, button {
-    vertical-align: middle;
-    color: inherit;
+	vertical-align: middle;
+	color: inherit;
 }
 button {
-    *overflow: visible;
+	*overflow: visible;
 }
 html {
-    -webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
 }
 em {
-    font-style: normal;
+	font-style: normal;
 }
 :active {
-    outline: 0 none;
-}
-/*reset end*/
-/*general start*/
-
+	outline: 0 none;
+}/**
+ * 通用样式
+ * 定义通用的字体、大小、颜色，链接的效果，一些常用的样式如浮动、对齐方式、特定字体颜色...
+ * 这里可以扩充任意的样式，但不推荐定义有特殊关键字的样式如.title,.name,.value等，
+ * 因为这种关键字很常用，一般如要定义这种关键字最好在通过模块来限定如.account .title{}
+ */
 body {
     font: 14px/1.5 "Microsoft Yahei";
     margin: 0 auto;
     color: #404040;
     background-color: #eee;
-    min-width: 1045px;
 }
 img {
     display: block;
@@ -143,18 +142,24 @@ a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-/*general end*/
-/*structure start*/
+}/**
+ * 结构样式
+ * 这里是指定义页面的整体框架，比如常用的上中下布局结构，也定义包括公用的结构的样式如sidebar、menu等
+ * 这里常用的样式名包括.header .container .content .footer .sidebar...
+ * 定义该文件需要先确定页面的结构，确定哪些是公用部分
+ */
+
 .header {
     position: relative;
     height: 53px;
     background-color: #7cb234;
     box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1);
 }
+
 .header .page-vertical {
     height: 100%;
 }
+
 .header .icon-logo {
     display: block;
     width: 163px;
@@ -165,6 +170,7 @@ a:hover {
     cursor: pointer;
     float: left;
 }
+
 .header-right {
     float: right;
 }
@@ -173,25 +179,30 @@ a:hover {
     width: 1045px;
     margin: auto;
 }
+
 .content-left-bg {
     background-image: url(../images/common/content-bg.png);
     background-size: 100% 100%;
     background-repeat: repeat-y;
 }
+
 .content-left-bg .page-vertical {
     background-image: url(../images/common/content-left-bg.png);
     background-size: 100% 100%;
     background-repeat: repeat-y;
 }
+
 .content-left {
     width: 100px;
     min-height: 100px;
     float: left;
     padding-right: 25px;
 }
+
 .content-left ul {
     width: 100px;
 }
+
 .content-left a {
     margin: 10px 0;
     line-height: 45px;
@@ -203,15 +214,18 @@ a:hover {
     -o-border-radius: 3px;
     border-radius: 3px;
 }
-.content-left a:hover{
+
+.content-left a:hover {
     color: #fff;
     background-color: #95C05C;
     text-decoration: none;
 }
+
 .content-left a.active {
     color: #fff;
     background-color: #7cb234;
 }
+
 .content-right {
     float: left;
     width: 910px;
@@ -225,31 +239,41 @@ a:hover {
     color: #c1c1c1;
     background-color: #474747;
 }
-.footer a:link, .footer a:visited, .footer a:active {
+
+.footer a:link,
+.footer a:visited,
+.footer a:active {
     color: #c1c1c1;
 }
+
 .footer a:hover {
     color: #eee;
 }
+
 .footer .nav {
     height: 38px;
     font-size: 12px;
     background-color: #4d4d4d;
 }
+
 .footer .nav li {
     display: inline-block;
     padding: 0 30px;
     margin: 10px 0;
     border-left: 1px solid #696969;
 }
-.footer .nav li.first, .footer .nav li:first-child {
+
+.footer .nav li.first,
+.footer .nav li:first-child {
     border: none;
 }
+
 .footer .helper {
     display: none;
     padding: 30px 0;
     line-height: 30px;
 }
+
 .footer .helper-item {
     float: left;
     width: 25%;
@@ -257,22 +281,46 @@ a:hover {
     _height: 125px;
     text-align: center;
 }
+
 .footer .helper-item .helper-title {
     font-size: 16px;
     padding-bottom: 7px;
 }
-.footer .company{
+
+.footer .company {
     padding: 30px 0 40px;
 }
+
 .footer .copyright-zh {
     display: block;
-    margin-bottom:8px;
+    margin-bottom: 8px;
     padding-top: 10px;
     background-repeat: no-repeat;
     background-position: left center;
 }
-/*structure end*/
-
+/**
+ * 常用组件，包含按钮、表单、列表、提示框、遮罩层等
+ * 1 按钮
+ * 按钮定义都以.btn开始，辅以.btn-adj定义具体的行为，
+ * 这里预定义了.btn-primary,.btn-secondary,.btn-gray,.btn-disabled
+ * 2 表单
+ *  <form class="form">
+ * 	<div class="form-item">
+ * 		<div class="form-label">
+ * 			<label><em>*</em>用户编号：</label>
+ * 		</div>
+ * 		<div class="form-value">
+ * 			<span class="form-vtext">CDB10238</span>
+ * 		</div>
+ * 	</div>
+ * 	</form>
+ * 表单定义都已
+ * 3 列表
+ * 预定义了.tlist .glist .slist
+ * 4 提示框
+ * 模拟常用的loading、alert、confirm
+ * 5 遮罩层
+ */
 /*buttons start*/
 .btn,input.btn {
     display: inline-block;

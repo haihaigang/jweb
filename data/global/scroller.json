@@ -1,0 +1,17 @@
+{
+	"code": 1,
+	"message": "获取首页滚动图",
+	"body": [{
+		"id": 1,
+		"pic": "images/index_kv1.jpg",
+		"url": ""
+	},{
+		"id": 2,
+		"pic": "img/2.jpg",
+		"url": ""
+	},{
+		"id": 3,
+		"pic": "img/3.jpg",
+		"url": ""
+	}]
+}

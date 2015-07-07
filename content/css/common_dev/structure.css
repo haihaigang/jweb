@@ -1,0 +1,156 @@
+/**
+ * 结构样式
+ * 这里是指定义页面的整体框架，比如常用的上中下布局结构，也定义包括公用的结构的样式如sidebar、menu等
+ * 这里常用的样式名包括.header .container .content .footer .sidebar...
+ * 定义该文件需要先确定页面的结构，确定哪些是公用部分
+ */
+
+.header {
+    position: relative;
+    height: 53px;
+    background-color: #7cb234;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header .page-vertical {
+    height: 100%;
+}
+
+.header .icon-logo {
+    display: block;
+    width: 163px;
+    height: 53px;
+    background-image: url(../images/common/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    float: left;
+}
+
+.header-right {
+    float: right;
+}
+
+.page-vertical {
+    width: 1045px;
+    margin: auto;
+}
+
+.content-left-bg {
+    background-image: url(../images/common/content-bg.png);
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+}
+
+.content-left-bg .page-vertical {
+    background-image: url(../images/common/content-left-bg.png);
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+}
+
+.content-left {
+    width: 100px;
+    min-height: 100px;
+    float: left;
+    padding-right: 25px;
+}
+
+.content-left ul {
+    width: 100px;
+}
+
+.content-left a {
+    margin: 10px 0;
+    line-height: 45px;
+    display: block;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.content-left a:hover {
+    color: #fff;
+    background-color: #95C05C;
+    text-decoration: none;
+}
+
+.content-left a.active {
+    color: #fff;
+    background-color: #7cb234;
+}
+
+.content-right {
+    float: left;
+    width: 910px;
+    min-height: 500px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.footer {
+    text-align: center;
+    color: #c1c1c1;
+    background-color: #474747;
+}
+
+.footer a:link,
+.footer a:visited,
+.footer a:active {
+    color: #c1c1c1;
+}
+
+.footer a:hover {
+    color: #eee;
+}
+
+.footer .nav {
+    height: 38px;
+    font-size: 12px;
+    background-color: #4d4d4d;
+}
+
+.footer .nav li {
+    display: inline-block;
+    padding: 0 30px;
+    margin: 10px 0;
+    border-left: 1px solid #696969;
+}
+
+.footer .nav li.first,
+.footer .nav li:first-child {
+    border: none;
+}
+
+.footer .helper {
+    display: none;
+    padding: 30px 0;
+    line-height: 30px;
+}
+
+.footer .helper-item {
+    float: left;
+    width: 25%;
+    min-height: 125px;
+    _height: 125px;
+    text-align: center;
+}
+
+.footer .helper-item .helper-title {
+    font-size: 16px;
+    padding-bottom: 7px;
+}
+
+.footer .company {
+    padding: 30px 0 40px;
+}
+
+.footer .copyright-zh {
+    display: block;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}

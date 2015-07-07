@@ -1,0 +1,56 @@
+/**
+ * 重置样式
+ */
+
+body, p, blockquote, figure, hr, h1, h2, h3, h4, h5, h6, ul, menu, dir, ol, dl, dd, fieldset, input[type=radio], input[type=checkbox], input[type=range], pre, xmp, plaintext, listing {
+	margin: 0;
+	white-space: inherit;
+}
+ul, menu, dir, ol, legend, fieldset, input, input[type=password], input[type=search], textarea, input[type=hidden], input[type=image], input[type=file], input[type=radio], input[type=checkbox], input[type=range], input[type=button], input[type=submit], input[type=reset], button {
+	padding: 0;
+}
+input[type=search], input[type=button], input[type=submit], input[type=reset] {
+	-webkit-appearance: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: 400;
+}
+cite, var, address, em {
+	font-style: normal;
+}
+a:-webkit-any-link {
+	text-decoration: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, iframe {
+	border: 0;
+}
+ol, ul {
+	list-style: none;
+}
+input, textarea, select, button {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	margin: 0;
+}
+input, select, button {
+	vertical-align: middle;
+	color: inherit;
+}
+button {
+	*overflow: visible;
+}
+html {
+	-webkit-text-size-adjust: none;
+}
+em {
+	font-style: normal;
+}
+:active {
+	outline: 0 none;
+}

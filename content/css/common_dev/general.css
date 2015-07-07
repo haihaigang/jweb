@@ -1,0 +1,90 @@
+/**
+ * 通用样式
+ * 定义通用的字体、大小、颜色，链接的效果，一些常用的样式如浮动、对齐方式、特定字体颜色...
+ * 这里可以扩充任意的样式，但不推荐定义有特殊关键字的样式如.title,.name,.value等，
+ * 因为这种关键字很常用，一般如要定义这种关键字最好在通过模块来限定如.account .title{}
+ */
+body {
+    font: 14px/1.5 "Microsoft Yahei";
+    margin: 0 auto;
+    color: #404040;
+    background-color: #eee;
+}
+img {
+    display: block;
+    border: none;
+}
+a:link, a:visited, a:active {
+    color: #404040;
+    text-decoration: none;
+}
+a:hover {
+    color: #7cb234;
+    text-decoration: underline;
+}
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    zoom: 1;
+}
+.extra {
+    position: relative;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.t-r {
+    text-align: right;
+}
+.t-l {
+    text-align: left;
+}
+.c-red {
+    color: #ed1c24;
+}
+.c-gray {
+    color: #8f8f8f;
+}
+.c-white {
+    color: #fff;
+}
+.c-green {
+    color: #7cb234;
+}
+.f-s {
+    font-size: .8em;
+}
+.e05 {
+    display: inline-block;
+    width: 0.5em;
+}
+.e1 {
+    display: inline-block;
+    width: 1em;
+}
+.e2 {
+    display: inline-block;
+    width: 2em;
+}
+.e3 {
+    display: inline-block;
+    width: 3em;
+}
+.nodata {
+    text-align: center;
+    padding: 7px 0;
+}
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

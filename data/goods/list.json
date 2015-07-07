@@ -1,0 +1,77 @@
+﻿{
+body: [{
+	"id": "100000001",
+	"name": "jQuery 教程",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 120,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 简介",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 安装",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 语法",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 选择器",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 事件",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 隐藏/显示",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 淡入淡出",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 滑动",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery 动画",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery Callback",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+},{
+	"id": "100000002",
+	"name": "jQuery Chaining",
+	"thumb": "images/website_v1_10.jpg",
+	"price": 110,
+	"weight": 1.0
+}],
+"code": 1,
+"message": "获取商品列表"
+}
